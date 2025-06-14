@@ -1,7 +1,8 @@
 // src/SocketManager.js
-import { io } from 'socket.io-client'
+import { io } from "socket.io-client";
 
-// Backend sunucusuna bağlanıyoruz (localhost:3001)
-const socket = io('http://localhost:3001')
+const socket = io("https://guess-who-online.onrender.com", {
+  transports: ["websocket"],
+});
 
-export default socket
+export default socket;
